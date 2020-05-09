@@ -4,7 +4,7 @@
 
 ## Goal
 During this project, you will
-- be exposed to the breadth of problem domains in graph theory and computer science
+- be exposed to the breadth of problem domains in graph theory and computer science,
 - develop the skills needed to research a problem, understand its motivations and potential solutions,
 - be exposed to the genesis of a problem and its historical solutions,
 - practice communicating complicated material in computer science and applied mathematics.
