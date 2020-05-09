@@ -1,4 +1,4 @@
-# Project: Graphs for Image Segmentation
+# Project: *Graphs for Image Segmentation*
 
 **Name:** ***Florent Dondjeu Tschoufack***
 
