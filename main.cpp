@@ -8,10 +8,57 @@
 
 #include "Graph.h"
 #include <iostream>
+#include <fstream>
+#include <sstream>
 
-int main()
+int main(int argc, char **argv)
 {
+	if(argc != 2)
+	{
+		std::cout << "The program requires two arguments!\nExiting...\n";
+		exit(1);
+	}
+
+	std::ifstream infile;
+	infile.open(argv[1]);
+
 	Graph<char> myGraph;
+	bool add = true;
+
+	while(!infile.eof())
+	{
+		std::string line;
+		std::getline(infile,line);
+		
+		if(line != "---" && add)
+		{
+			std::istringstream ss(line);
+			char u;
+			int w;
+
+			ss >> u;
+			ss >> w;
+			myGraph.addVertex(u,w);
+		}
+		else
+		{
+			add = false;
+			std::istringstream ss(line);
+			char u, v;
+			ss >> u;
+			while(ss >> v)
+				myGraph.addEdge(u,v);
+		}
+
+	}
+
+	myGraph.print();
+	myGraph.Segment();
+
+	std::cout << "\nend of program. Existing...\n";
+	std::cout << "========================================\n";
+
+	/*Graph<char> myGraph;
 
 	//pixels on the grids
 	myGraph.addVertex('A',20);
@@ -48,7 +95,7 @@ int main()
 	myGraph.print();
 
 	std::cout << "\n";
-	myGraph.Segment();
+	myGraph.Segment();*/
 
 	return 0;
 }
