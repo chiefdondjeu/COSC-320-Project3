@@ -1,6 +1,6 @@
 # Project: Graphs for Image Segmentation
 
-## Name: Florent Dondjeu Tschoufack
+### Name: Florent Dondjeu Tschoufack
 
 ## Goal
 During this project, you will
