@@ -35,7 +35,7 @@ class Graph
 		std::map<T,std::vector<Pixel> > V; 	//pixels and their edges with other pixels
 		std::map<T,double> W;	//pixels and their intensity
 
-		int vertcount, edgecount;
+		//int vertcount, edgecount;
 
 		std::map< double,std::pair<T,T> > pi;
 
@@ -75,7 +75,7 @@ class Graph
 /*	DEFINITIONS */
 
 template <class T>
-Graph<T>::Graph(): vertcount(0), edgecount(0)
+Graph<T>::Graph()//: vertcount(0), edgecount(0)
 {}
 
 template <class T>
@@ -100,7 +100,7 @@ void Graph<T>::addVertex(T v, double w)
 		V[v] = vect;
 		W[v] = w;
 
-		vertcount++;
+		//vertcount++;
 	}
 }
 
@@ -119,7 +119,7 @@ void Graph<T>::addEdge(T u, T v)	//undirected edge
 		std::pair<T,T> p = std::make_pair(u,v);
 		pi[difference(iteru->second,iterv->second)] = p;
 
-		edgecount++;
+		//edgecount++;
 	}
 }
 
@@ -136,17 +136,18 @@ void Graph<T>::printVect(std::vector<Pixel>& vect)
 template <class T>
 void Graph<T>::print()
 {
-	std::cout << "Graph:";
+	std::cout << "========================================" << std::endl;
+	std::cout << "\t\tGraph" << std::endl;
 	typename std::map<T, std::vector<Pixel> >::iterator iter;
 	typename std::map<T,double>::iterator iterW;
+	std::cout << "========================================";
 	for(iter = V.begin(), iterW = W.begin(); iter != V.end(); iter++,iterW++)
 	{
-		std::cout << "\n\nVertex: " << iter->first << std::endl;
-		std::cout << "Weight: " << iterW->second << std::endl;
+		std::cout << "\nVertex: " << iter->first << "-" << iterW->second << std::endl;
 		std::cout << "Adjacencies: ";
 		printVect(iter->second);
+		std::cout << std::endl;
 	}
-	std::cout << std::endl;
 }
 
 template <class T>
@@ -232,10 +233,10 @@ void Graph<T>::Segment()
 	/*for(auto i = pi.begin(); i != pi.end(); i++)
 		std::cout << i->first << " " << i->second.first << "," << i->second.second << std::endl;*/
 
-	//step 0 done
+	//step 1
 	//sort E into pi, and sort non-decreasing order
 
-	//step 1 done
+	//step 2
 	// each vertex is its own component
 	std::vector<std::vector<T> > S;
 	std::vector<T> tmp;
@@ -246,8 +247,7 @@ void Graph<T>::Segment()
 		tmp.clear();
 	}
 
-	//step 2 done
-	//repeat step 3 q=1 ... m(# of edges)
+	//step 3 & 4
 	for(auto q = pi.begin(); q != pi.end(); q++)
 	{
 		if(isDisjoint(S,q->second.first,q->second.second) && q->first < internal_size(S,q->second.first) && q->first < internal_size(S,q->second.second))
@@ -256,18 +256,20 @@ void Graph<T>::Segment()
 		}
 	}
 
-	std::cout << "Graph Segmentation: ";
+	//step 5
+	std::cout << "\n========================================\n";
+	std::cout << "\tSegmentation Result";
+	std::cout << "\n========================================\n";
 	for(int i = 0; i < S.size(); i++)
 	{
 		if(S.at(i).size() != 0)
 		{
-			std::cout << "{ ";
+			std::cout << "Region " << i+1 << ": ";
 			for(int j = 0; j < S.at(i).size(); j++)
 				std::cout << S.at(i).at(j) << " ";
-			std::cout << "} ";
+			std::cout << "\n\n";
 		}
 	}
-	std::cout << std::endl;
 }
 
 #endif // GRAPH_PRJ_H
