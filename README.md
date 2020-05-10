@@ -61,4 +61,11 @@ C A
 
 ## Output
 
+a sample output
+
+```
+Vertex: A-79
+Adjacencies: B(4) F(20) G(1)
+``
+
 ## Analysis
