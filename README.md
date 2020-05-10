@@ -19,7 +19,7 @@ To run the program first compile the code by typing
 make
 ```
 
-Now to execute the code:
+Now to execute the code
 
 ```
 ./projDriver data#
