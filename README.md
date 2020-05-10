@@ -27,7 +27,7 @@ Now to execute the code
 
 '#' represents the number attached to the data files.
 
-When finish with the program, simply type
+When you are done with the program, simply type
 
 ```
 make clean
