@@ -170,8 +170,8 @@ void Graph<T>::print()
 	std::cout << "========================================";
 	for(iter = V.begin(), iterW = W.begin(); iter != V.end(); iter++,iterW++)
 	{
-		std::cout << "\nVertex: " << iter->first << "-" << iterW->second << std::endl;
-		std::cout << "Adjacencies: ";
+		std::cout << "\nPixel: " << iter->first << "-" << iterW->second << std::endl;
+		std::cout << "Edges: ";
 		printVect(iter->second);
 		std::cout << std::endl;
 	}
