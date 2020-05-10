@@ -72,8 +72,7 @@ D F
 X Y
 ```
 
-#### NOTE: only list the occurence of an edge once
-for example, using the list above there should be no
+**NOTE: only list the occurence of an edge once.** For example, using the list above there should be no
 
 ```
 C A
