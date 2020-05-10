@@ -29,12 +29,25 @@ Now to execute the code
 ### Diffent data
 If you would like to create your own data, simply create a new file and follow this format:
 
-Make a list of pixels of type char and next to it random positive value
+Make a list of pixels of type char followed by any random positive value
 
 ```
 A 28
 C 50
 X 9
+```
+After listing all the pixel, add a breakline (3 dashed)
+
+```
+---
+```
+
+Next, list the possible edges with the pixels
+
+```
+A C X
+D F
+Y X
 ```
 
 ## Output
