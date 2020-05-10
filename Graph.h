@@ -57,7 +57,7 @@ class Graph
 
 		//add all the weight of each element in a component
 		//returns the minimun of the two
-		double internal_size(std::vector<std::vector<T> >, T,T);
+		double internal_difference(std::vector<std::vector<T> >, T,T);
 
 		//combines the pixel from two components into one 
 		void merge(std::vector<std::vector<T> >&, T,T);

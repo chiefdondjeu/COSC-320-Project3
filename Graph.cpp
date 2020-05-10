@@ -165,7 +165,7 @@ double Graph<T>::tau(int x)
 */
 
 template <class T>
-double Graph<T>::internal_size(std::vector<std::vector<T> >S, T x, T y)
+double Graph<T>::internal_difference(std::vector<std::vector<T> >S, T x, T y)
 {
 	int min, sum1 = 0, sum2 = 0;
 
@@ -264,7 +264,7 @@ void Graph<T>::Segment()
 	for(auto q = pi.begin(); q != pi.end(); q++)
 	{
 		//if disjoint and edge weight < internal component weight
-		if(isDisjoint(S,q->second.first,q->second.second) && q->first < internal_size(S,q->second.first,q->second.second))
+		if(isDisjoint(S,q->second.first,q->second.second) && q->first < internal_difference(S,q->second.first,q->second.second))
 			merge(S,q->second.first,q->second.second);
 	}
 
