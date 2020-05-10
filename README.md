@@ -47,7 +47,13 @@ Next, list the possible edges with the pixels
 ```
 A C X
 D F
-Y X
+X Y
+```
+#### NOTE: only list the occurence of an edge once
+for example, using the list above, there should be no
+
+```
+C A
 ```
 
 ## Output
