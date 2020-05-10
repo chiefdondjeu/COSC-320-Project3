@@ -22,7 +22,7 @@ make
 Now to execute the code:
 
 ```
-./imageSeg data#
+./projDriver data#
 ```
 
 ## Output
