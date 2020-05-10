@@ -30,11 +30,11 @@ If you would like to create your own data, simply create a new file and follow t
 
 Make a list of pixels of type char and next to it random positive value
 
-'''
+```
 A 28
 C 50
 X 9
-'''
+```
 
 ## Output
 
