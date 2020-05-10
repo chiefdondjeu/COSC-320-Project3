@@ -27,6 +27,26 @@ Now to execute the code
 
 '#' represents the number attached to the data files.
 
+## Output
+
+#### Graph print
+
+```
+Pixel: A-79
+Edges: B(4) F(20) G(1)
+```
+The number after dash next to the Pixel represents its intensity and the number in paranthesis is the edge weight between the two pixels.
+
+#### Segmentation Result
+
+```
+Region 2: B-11   D-15
+
+Region 5: E-30   A-35   F-38   C-46   G-32
+```
+
+The pixels are grouped into different regions based on their intensity.
+
 ### Different data
 If you would like to create your own data, simply create a new file and follow this format:
 
@@ -58,25 +78,5 @@ for example, using the list above there should be no
 ```
 C A
 ```
-
-## Output
-
-#### Graph print
-
-```
-Pixel: A-79
-Edges: B(4) F(20) G(1)
-```
-The number after dash next to the Pixel represents its intensity and the number in paranthesis is the edge weight between the two pixels.
-
-#### Segmentation Result
-
-```
-Region 2: B-11   D-15
-
-Region 5: E-30   A-35   F-38   C-46   G-32
-```
-
-The pixels are grouped into different regions based on their intensity.
 
 ## Analysis
