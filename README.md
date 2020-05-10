@@ -77,6 +77,6 @@ Region 2: B-11   D-15
 Region 5: E-30   A-35   F-38   C-46   G-32
 ```
 
-The pixels are grouped into different regions based on their intensity, which is present after the dash
+The pixels are grouped into different regions based on their intensity.
 
 ## Analysis
