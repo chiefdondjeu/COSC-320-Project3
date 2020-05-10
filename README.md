@@ -27,6 +27,14 @@ Now to execute the code
 
 '#' represents the number attached to the data files.
 
+When finish with the program, simply type
+
+```
+make clean
+```
+
+to remove the object file and the excutable.
+
 ## Output
 
 #### Graph print
