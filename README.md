@@ -26,6 +26,7 @@ Now to execute the code
 ```
 '#' represents the number attached to the data files.
 
+### Diffent data
 If you would like to create your own data, simply create a new file and follow this format:
 
 Make a list of pixels of type char and next to it random positive value
