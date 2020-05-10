@@ -24,7 +24,7 @@ Now to execute the code:
 ```
 ./projDriver data#
 ```
-'#' represents the number attached to the data file.
+'#' represents the number attached to the data files.
 
 ## Output
 
