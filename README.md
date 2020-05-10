@@ -65,7 +65,7 @@ C A
 
 ```
 Pixel: A-79
-Adjacencies: B(4) F(20) G(1)
+Edges: B(4) F(20) G(1)
 ```
 The number after dash next to the Pixel represents its intensity and the number in paranthesis is the edge weight between the two pixels.
 
