@@ -38,7 +38,7 @@ C 50
 X 9
 ```
 
-After listing all the pixel, add a breakline (3 dashed)
+After listing all the pixel, add a breakline (3 dashes)
 
 ```
 ---
