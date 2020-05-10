@@ -24,9 +24,10 @@ Now to execute the code
 ```
 ./projDriver data#
 ```
+
 '#' represents the number attached to the data files.
 
-### Diffent data
+### Different data
 If you would like to create your own data, simply create a new file and follow this format:
 
 Make a list of pixels of type char followed by any random positive value
@@ -36,6 +37,7 @@ A 28
 C 50
 X 9
 ```
+
 After listing all the pixel, add a breakline (3 dashed)
 
 ```
@@ -49,8 +51,9 @@ A C X
 D F
 X Y
 ```
+
 #### NOTE: only list the occurence of an edge once
-for example, using the list above, there should be no
+for example, using the list above there should be no
 
 ```
 C A
