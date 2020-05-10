@@ -61,12 +61,22 @@ C A
 
 ## Output
 
-a sample output
+Graph print
 
 ```
 Pixel: A-79
 Adjacencies: B(4) F(20) G(1)
 ```
 The number after dash next to the Pixel represents its intensity and the number in paranthesis is the edge weight between the two pixels.
+
+Segmentation Result
+
+```
+Region 2: B-11   D-15
+
+Region 5: E-30   A-35   F-38   C-46   G-32
+```
+
+The pixels are grouped into different regions based on their intensity, which is present after the dash
 
 ## Analysis
