@@ -1,0 +1,14 @@
+A 100
+B 15
+C 14
+D 20
+E 90
+F 97
+G 99
+---
+A B F G
+B G C
+C D G
+D G E
+E G F
+F G
