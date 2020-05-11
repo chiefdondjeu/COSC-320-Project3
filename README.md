@@ -87,3 +87,12 @@ C A
 ```
 
 ## Analysis
+
+### Approach
+After reading an article that proposed a method of segmenting images using Graph theory, I then realized that I could use the Graph class from my labs to be able to implement this proposed algorithm. I could not quite figure out how to read images with C++, so then I drew a small image of what egdes between pixels would look like. After having this visualization, I was able to piece everything together in order to implement the segmenting algorithm.
+
+### Deficiencies
+When running the algorithm, I noticed that for cases where a vertex is not a direct neighbor of a nother vertex with a relativily same amount of brightness, were not group together. I thought of two posibbles issues that could have cause this. The first one being, how I calculated the edge weight, to which I simply subtracted both vertices's intensity and returned a positive value. The second one being, the order at which the edge pair appear during a for loop or the way I chose my numbers for the graph intensity of each vertex.
+
+### Future Plans
+In the future, I would like to first test out a bigger graph by making a complex connected graph in a data file to be read, along with giving fair intensity values, so that I can she how the algorithm works with greater number od edges and vertices. I have also heard a c++ library called opencv, which help faciliate working with images in c++. With this library I could get the correct data I need from images and be able to plot those data into the Graph and test the algorithm again.
