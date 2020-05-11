@@ -43,7 +43,7 @@ to remove the object file and the excutable.
 Pixel: A-79
 Edges: B(4) F(20) G(1)
 ```
-The number after dash next to the Pixel represents its intensity and the number in paranthesis is the edge weight between the two pixels.
+The number after dash next to the Pixel represents its intensity and the number in paranthesis is the edge weight between the two pixels, which is calculated by taking the positive difference of the vertices intensity.
 
 #### Segmentation Result
 
